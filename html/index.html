@@ -9,34 +9,29 @@
   <body>
     <!--  HEADER -->
     <header class="header">
-      <div class="container header__container">
+      <div class="header-top">
+        <a href="#" class="nav__link">
+          <img src="../assets/icon/partner.svg" alt="icon" class="icon-left" />
+          Partner Program
+        </a>
+
+        <select name="language" class="select">
+          <option value="es">Español</option>
+          <option value="en">ingles</option>
+          <option value="fr">Frances</option>
+          <option value="fr">Portugues</option>
+        </select>
+      </div>
+      <div class="header-botton">
         <img
           src="../assets/img/vesta_logo.svg"
           alt="Logo By Demes"
           class="logo"
         />
         <div class="nav">
-          <div class="nav__top-row">
-            <a href="#" class="nav__link">
-              <img
-                src="../assets/icon/partner.svg"
-                alt="icon"
-                class="icon-left"
-              />
-              Partner Program
-            </a>
-
-            <select name="language" class="nav__select">
-              <option value="es">Español</option>
-              <option value="en">ingles</option>
-              <option value="fr">Frances</option>
-              <option value="fr">Portugues</option>
-            </select>
-          </div>
-
           <div class="nav__bottom-row">
             <div class="dropdown-wrapper">
-              <select id="sobreNosotrosSelect" class="nav__select">
+              <select id="sobreNosotrosSelect" class="select">
                 <option value="">Sobre Nosotros</option>
                 <option value="partner.html">Partner Program</option>
               </select>
@@ -49,37 +44,46 @@
     </header>
 
     <!--  HERO -->
+
     <section class="hero">
-      <div class="container hero__container">
-        <div class="hero__text">
-          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-          <div class="reference-box">
-            <h3>REFERENCIA<br /><span>MODELO</span></h3>
-            <ul>
-              <li>● Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-              <li>
-                ● Duis aute irure dolor in reprehenderit in voluptate velit esse
-              </li>
-              <li>● Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-              <li>● Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-              <li>
-                ● Duis aute irure dolor in reprehenderit in voluptate velit esse
-              </li>
-              <li>● Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            </ul>
-          </div>
+      <div class="hero__text">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+        <div class="reference-box">
+          <h3>REFERENCIA<br /><span>MODELO</span></h3>
+          <hr />
+          <ul>
+            <li>● Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li>● Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li>● Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li>
+              ● Duis aute irure dolor in reprehenderit in voluptate velit esse
+            </li>
+            <li>● Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li>● Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li>
+              ● Duis aute irure dolor in reprehenderit in voluptate velit esse
+            </li>
+            <li>● Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+          </ul>
         </div>
-        <div class="hero__image">
+      </div>
+      <div class="hero__image carousel">
+        <button class="carousel__btn prev">&#10094;</button>
+        <div class="carousel__track">
+          <img src="../assets/img/producto.svg" alt="Producto" />
+          <img src="../assets/img/producto.svg" alt="Producto" />
           <img src="../assets/img/producto.svg" alt="Producto" />
         </div>
+        <button class="carousel__btn next">&#10095;</button>
       </div>
     </section>
 
     <!--  VENTAJAS -->
+
     <section class="features">
       <div class="container">
         <h2>Ventajas</h2>
-        <div class="features__grid">
+        <div class="features__items">
           <!-- Repite estos bloques por cada ventaja -->
           <div class="feature">
             <img src="../assets/icon/640_zonas.svg" alt="" />
@@ -145,88 +149,86 @@
     </section>
 
     <!--  ACCESORIOS -->
-    <section class="accessories">
-      <div class="container">
-        <h2>Accesorios</h2>
-        <div class="accessories__grid">
-          <!-- CARD 1 -->
-          <div class="accessory-card">
-            <img src="../assets/img/picture.svg" alt="Accesorio 1" />
-            <h3>REFERENCIA</h3>
-            <p class="modelo">MODELO</p>
-            <p class="descripcion">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum..
-            </p>
-          </div>
 
-          <!-- CARD 2 -->
-          <div class="accessory-card">
-            <img src="../assets/img/picture1.svg" alt="Accesorio 2" />
-            <h3>REFERENCIA</h3>
+    <section class="accessories">
+      <h2>Accesorios</h2>
+      <div class="accessories__content">
+        <!-- CARD 1 -->
+        <div class="accessory-card">
+          <h3>Soporte de montaje triangular</h3>
+          <img src="../assets/img/picture.svg" alt="Accesorio 1" />
+          <div class="badge">
+            <h6>REFERENCIA</h6>
             <p class="modelo">MODELO</p>
-            <p class="descripcion">
-              LoLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
           </div>
-          <div class="accessory-card">
-            <img src="../assets/img/picture2.svg" alt="Accesorio 1" />
-            <h3>REFERENCIA</h3>
+          <p class="descripcion">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor.
+          </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="accessory-card">
+          <h3>Cubierta waterproof para magneticos DC-23</h3>
+          <img src="../assets/img/picture1.svg" alt="Accesorio 2" />
+          <div class="badge">
+            <h6>REFERENCIA</h6>
             <p class="modelo">MODELO</p>
-            <p class="descripcion">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum..
-            </p>
           </div>
-          <div class="accessory-card">
-            <img src="../assets/img/picture3.svg" alt="Accesorio 1" />
-            <h3>REFERENCIA</h3>
+          <p class="descripcion">
+            LoLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor.
+          </p>
+        </div>
+        <div class="accessory-card">
+          <h3>Soporte giratorio de exterior</h3>
+          <img src="../assets/img/picture2.svg" alt="Accesorio 1" />
+          <div class="badge">
+            <h6>REFERENCIA</h6>
             <p class="modelo">MODELO</p>
-            <p class="descripcion">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum..
-            </p>
           </div>
+          <p class="descripcion">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor.
+          </p>
+        </div>
+        <div class="accessory-card">
+          <h3>Soporte giratorio VESTA</h3>
+          <img src="../assets/img/picture3.svg" alt="Accesorio 1" />
+          <div class="badge">
+            <h6>REFERENCIA</h6>
+            <p class="modelo">MODELO</p>
+          </div>
+          <p class="descripcion">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor.
+          </p>
         </div>
       </div>
     </section>
 
     <!--  INFORMATIVA -->
-    <section class="info-section">
-      <div class="container">
-        <h3 class="info-title">Lorem Ipsum passage</h3>
-        <h2 class="info-subtitle">The standard used since the 1500s</h2>
-        <p class="info-paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum..
-        </p>
-      </div>
+
+    <section class="info-section container">
+      <h3 class="info-title">Lorem Ipsum passage</h3>
+      <h2 class="info-subtitle">The standard used since the 1500s</h2>
+      <p class="info-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum..
+      </p>
     </section>
 
     <!-- TABLA COMPARATIVA -->
@@ -243,140 +245,106 @@
             <div class="cell header-cell diamond">Diamond</div>
           </div>
 
-          <!-- FILA 1 -->
+          <!-- FILAS -->
           <div class="comparison-row">
             <div class="cell benefit-label">Beneficio A</div>
-            <div class="cell">
-              <img src="../assets/icon/TickYes.svg" />
-            </div>
-            <div class="cell">
-              <img src="assets/icon/TickYes.svg" />
-            </div>
-            <div class="cell">
-              <img src="../assets/icon/TickYes.svg" />
-            </div>
-            <div class="cell">
-              <img src="../assets/icon/TickYes.svg" />
-            </div>
+            <div class="cell"><img src="../assets/icon/TickYes.svg" /></div>
+            <div class="cell"><img src="../assets/icon/TickYes.svg" /></div>
+            <div class="cell"><img src="../assets/icon/TickYes.svg" /></div>
+            <div class="cell"><img src="../assets/icon/TickYes.svg" /></div>
           </div>
 
-          <!-- FILA 2 -->
           <div class="comparison-row">
             <div class="cell benefit-label">Beneficio B</div>
-            <div class="cell">
-              <img src="../assets/icon/TickYes.svg" />
-            </div>
-            <div class="cell">
-              <img src="../assets/icon/TickYes.svg" />
-            </div>
-            <div class="cell">
-              <img src="../assets/icon/TickYes.svg" />
-            </div>
-            <div class="cell">
-              <img src="../assets/icon/TickYes.svg" />
-            </div>
+            <div class="cell"><img src="../assets/icon/TickYes.svg" /></div>
+            <div class="cell"><img src="../assets/icon/TickYes.svg" /></div>
+            <div class="cell"><img src="../assets/icon/TickYes.svg" /></div>
+            <div class="cell"><img src="../assets/icon/TickYes.svg" /></div>
           </div>
 
-          <!-- FILA 3 -->
           <div class="comparison-row">
             <div class="cell benefit-label">Beneficio C</div>
-            <div class="cell">
-              <img src="../assets/icon/TickNo.svg" />
-            </div>
+            <div class="cell"><img src="../assets/icon/TickNo.svg" /></div>
             <div class="cell"><img src="../assets/icon/TickYes.svg" /></div>
-            <div class="cell">
-              <img src="../assets/icon/TickYes.svg" />
-            </div>
-            <div class="cell">
-              <img src="../assets/icon/TickYes.svg" />
-            </div>
+            <div class="cell"><img src="../assets/icon/TickYes.svg" /></div>
+            <div class="cell"><img src="../assets/icon/TickYes.svg" /></div>
           </div>
 
-          <!-- FILA 4 -->
           <div class="comparison-row">
             <div class="cell benefit-label">Beneficio D</div>
-            <div class="cell">
-              <img src="../assets/icon/TickNo.svg" />
-            </div>
+            <div class="cell"><img src="../assets/icon/TickNo.svg" /></div>
             <div class="cell"><img src="../assets/icon/TickYes.svg" /></div>
             <div class="cell"><img src="../assets/icon/TickYes.svg" /></div>
-            <div class="cell">
-              <img src="../assets/icon/TickYes.svg" />
-            </div>
+            <div class="cell"><img src="../assets/icon/TickYes.svg" /></div>
           </div>
+        </div>
+        <div class="comparison-notes">
+          <p>(1) Sed ut perspiciatis unde omnis.</p>
+          <p>(2) Sed ut perspiciatis unde omnis.</p>
+          <p>(3) Sed ut perspiciatis unde omnis.</p>
         </div>
       </div>
     </section>
 
     <!--  FORMULARIO DE CONTACTO -->
-    <section class="contact-form">
-      <div class="container">
-        <h2>Contáctanos</h2>
-        <form id="partnerForm">
+
+    <section class="form-section">
+      <div class="form-container">
+        <h2>Formulario</h2>
+        <form>
           <div class="form-grid">
             <div class="form-group">
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre" required />
+              <label>Nombre*</label>
+              <input type="text" placeholder="Nombre" required />
             </div>
-
             <div class="form-group">
-              <label for="apellido">Apellido</label>
-              <input type="text" id="apellido" name="apellido" required />
+              <label>Apellido*</label>
+              <input type="text" placeholder="Apellido" required />
             </div>
-
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
+              <label>Email*</label>
+              <input type="email" placeholder="Email" required />
             </div>
-
             <div class="form-group">
-              <label for="empresa">Empresa</label>
-              <input type="text" id="empresa" name="empresa" />
+              <label>Empresa*</label>
+              <input type="text" placeholder="Empresa" required />
             </div>
-
             <div class="form-group">
-              <label for="direccion">Dirección</label>
-              <input type="text" id="direccion" name="direccion" />
+              <label>Dirección*</label>
+              <input type="text" placeholder="Dirección" required />
             </div>
-
             <div class="form-group">
-              <label for="pais">País</label>
-              <select id="pais" name="pais">
-                <option value="">Seleccione un país</option>
-                <option value="ES">España</option>
-                <option value="MX">México</option>
-                <option value="AR">Argentina</option>
-                <!-- Agrega más países si deseas -->
+              <label>País*</label>
+              <select required>
+                <option value="">País</option>
+                <option>España</option>
+                <option>México</option>
+                <option>Argentina</option>
               </select>
             </div>
-
             <div class="form-group full">
-              <label for="interes"
-                >Estoy interesado en el Partner Program</label
-              >
-              <input type="text" id="interes" name="interes" />
-            </div>
-
-            <div class="form-group full">
-              <label for="mensaje">Mensaje</label>
+              <label>Estoy interesado en el Partner Program*</label>
               <textarea
-                id="mensaje"
-                name="mensaje"
-                rows="6"
-                minlength="500"
-                placeholder="Escribe al menos 500 caracteres..."
+                placeholder="Estoy interesado en el Partner Program"
                 required
               ></textarea>
             </div>
-
-            <div class="form-group full">
-              <label class="checkbox">
-                <input type="checkbox" id="politica" required />
-                Acepto la política de privacidad y el tratamiento de datos.
+            <div class="form-group full checkbox-group">
+              <input type="checkbox" id="politica" required />
+              <label for="politica">
+                Doy mi consentimiento para el tratamiento de mis datos
+                personales.
+                <a href="#"
+                  >He leído y acepto la política de privacidad y el aviso
+                  legal</a
+                >
+                de la empresa.
               </label>
             </div>
-
             <div class="form-group full">
+              <a href="#">¿Cómo protegemos sus datos?</a>
+            </div>
+            <div class="form-group full button-group">
               <button type="submit" class="btn-submit">
                 Enviar formulario
               </button>
@@ -385,6 +353,78 @@
         </form>
       </div>
     </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <!-- Parte superior -->
+      <div class="footer-top">
+        <div class="footer-container">
+          <!-- Columna 1 -->
+          <div class="footer-col">
+            <h4>Sobre nosotros</h4>
+            <ul>
+              <li><a href="#">Acerca de Nosotros</a></li>
+              <li><a href="#">Partner Program</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 2 -->
+          <div class="footer-col">
+            <h4>Software</h4>
+            <p>Aplicación móvil</p>
+            <a href="#"
+              ><img
+                src="../assets/icon/GooglePlay.svg"
+                alt="App Store"
+                class="store-btn"
+            /></a>
+            <a href="#"
+              ><img
+                src="../assets/icon/AppStore.svg"
+                alt="Google Play"
+                class="store-btn"
+            /></a>
+          </div>
+
+          <!-- Columna 3 -->
+          <div class="footer-col logo-col">
+            <img
+              src="../assets/icon/Vesta_logo.svg"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <div>
+              <a href="#"
+                ><img
+                  src="../assets/icon/likidin.svg"
+                  alt="LinkedIn"
+                  class="social-icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parte inferior -->
+      <div class="footer-bottom">
+        <div class="footer-container">
+          <!-- Columna izquierda -->
+          <div class="footer-bottom-left">
+            <p>© Copyright 2025</p>
+            <ul class="footer-links">
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Política de cookies</a></li>
+              <li><a href="#">Configuración de cookies</a></li>
+              <li><a href="#">Aviso legal</a></li>
+            </ul>
+          </div>
+
+          <!-- Idioma a la derecha -->
+          <div class="footer-lang">Español &#x25B2;</div>
+        </div>
+      </div>
+    </footer>
 
     <script src="../js/main.js"></script>
   </body>

@@ -8,25 +8,52 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header__container">
-        <a href="index.html" class="logo">By Demes</a>
+      <div class="header-top">
+        <a href="#" class="nav__link">
+          <img src="../assets/icon/partner.svg" alt="icon" class="icon-left" />
+          Partner Program
+        </a>
+
+        <select name="language" class="select">
+          <option value="es">Español</option>
+          <option value="en">ingles</option>
+          <option value="fr">Frances</option>
+          <option value="fr">Portugues</option>
+        </select>
+      </div>
+      <div class="header-botton">
+        <img
+          src="../assets/img/vesta_logo.svg"
+          alt="Logo By Demes"
+          class="logo"
+        />
+        <div class="nav">
+          <div class="nav__bottom-row">
+            <div class="dropdown-wrapper">
+              <select id="sobreNosotrosSelect" class="select">
+                <option value="">Sobre Nosotros</option>
+                <option value="partner.html">Partner Program</option>
+              </select>
+            </div>
+
+            <a href="#" class="btn-border">Comprar ahora</a>
+          </div>
+        </div>
       </div>
     </header>
 
-    <section class="intro-section">
-      <div class="container">
-        <h1>Lorem Ipsum passage</h1>
-        <h2>The standard used since the 1500s</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum..
-        </p>
-      </div>
+    <section class="info-section container">
+      <h3 class="info-title">Lorem Ipsum passage</h3>
+      <h2 class="info-subtitle">The standard used since the 1500s</h2>
+      <p class="info-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum..
+      </p>
     </section>
 
     <section class="points-section">
@@ -56,6 +83,74 @@
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <!-- Parte superior -->
+      <div class="footer-top">
+        <div class="footer-container">
+          <!-- Columna 1 -->
+          <div class="footer-col">
+            <h4>Sobre nosotros</h4>
+            <ul>
+              <li><a href="#">Acerca de Nosotros</a></li>
+              <li><a href="#">Partner Program</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 2 -->
+          <div class="footer-col">
+            <h4>Software</h4>
+            <p>Aplicación móvil</p>
+            <a href="#"
+              ><img
+                src="../assets/icon/GooglePlay.svg"
+                alt="App Store"
+                class="store-btn"
+            /></a>
+            <a href="#"
+              ><img
+                src="../assets/icon/AppStore.svg"
+                alt="Google Play"
+                class="store-btn"
+            /></a>
+          </div>
+
+          <!-- Columna 3 -->
+          <div class="footer-col logo-col">
+            <img
+              src="../assets/img/vesta_logo.svg"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <a href="#"
+              ><img
+                src="../assets/icon/likidin.svg"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parte inferior -->
+      <div class="footer-bottom">
+        <div class="footer-container">
+          <!-- Columna izquierda -->
+          <div class="footer-bottom-left">
+            <p>© Copyright 2025</p>
+            <ul class="footer-links">
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Política de cookies</a></li>
+              <li><a href="#">Configuración de cookies</a></li>
+              <li><a href="#">Aviso legal</a></li>
+            </ul>
+          </div>
+
+          <!-- Idioma a la derecha -->
+          <div class="footer-lang">Español &#x25B2;</div>
+        </div>
+      </div>
+    </footer>
 
     <script src="../js/main.js"></script>
   </body>
